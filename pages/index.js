@@ -22,7 +22,14 @@ export default function Home() {
   }
 
   return (
-    <div className="container">
+    <div className="container" style={{ 
+          // backgroundImage: "url('https://renewableknowledge.com/wp-content/uploads/2020/10/pexels-pixabay-158179.jpg')",
+          // height:'100vh',
+          // // marginTop:'-70px',
+          // fontSize:'50px',
+          // backgroundSize: 'cover',
+          // backgroundRepeat: 'no-repeat',
+        }}>
       <Head>
         <title>appropriate technology solutions for regeneration - listt.io
         </title>
@@ -66,6 +73,56 @@ export default function Home() {
         <div className="grid">
           <a 
             // href="https://github.com/hayeskg/"
+            onClick = {()=> toggleDropdowns("mission", !dropdowns.mission)} 
+            className="card"
+          >
+            <h3>mission &rarr;</h3>
+            <p>Provide appropriate technology</p>
+            <p>solutions to enable regenerative</p>
+            <p>agriculture practices.</p>
+            <p></p>
+            {
+              dropdowns.mission?
+                <div className="subhead">
+                  <p>observe ⌒ connect ⌒ automate ⌒ insights </p>
+                  {/* <p className="emoji">	&#x1F4BB;	&#x1F6E0; &#x1F916;</p> */}
+                </div>: 
+                <div>
+                </div>
+            }
+          </a>
+           <a 
+            // href="https://github.com/hayeskg/"
+            onClick = {()=> toggleDropdowns("vision", !dropdowns.vision)} 
+            className="card"
+          >
+            <h3>vision &rarr;</h3>
+            <p>Build a team around regenerative,</p>
+            <p>scalable solutions for people</p>
+            <p>and planet.</p>
+            <p></p>
+            {
+              dropdowns.vision?
+                <div className="subhead">
+                  <p>biodiversity ⌒ farm ⌒ produce ⌒ food </p>
+                  {/* <p className="emoji">	&#x1F4BB;	&#x1F6E0; &#x1F916;</p> */}
+                </div>: 
+                <div>
+                </div>
+            }
+          </a>
+           <a 
+            // href="https://github.com/hayeskg/"
+            onClick = {()=> toggleDropdowns("values", !dropdowns.values)} 
+            className="card"
+          >
+            <h3>values &rarr;</h3>
+            <p>Integrity - to people, planet, work</p>
+            <p>Regeneration - of nature, communities and tools</p>
+            <p>Impact - for planet, people and wellbeing</p>
+          </a>
+          {/* <a 
+            // href="https://github.com/hayeskg/"
             onClick = {()=> toggleDropdowns("build", !dropdowns.build)} 
             className="card"
           >
@@ -81,8 +138,8 @@ export default function Home() {
                 <div>
                 </div>
             }
-          </a>
-          <a 
+          </a> */}
+          {/* <a 
             // href="https://www.kristofhayes.me/" 
             onClick = {()=> toggleDropdowns("project", !dropdowns.project)} 
             className="card"
@@ -99,8 +156,8 @@ export default function Home() {
                 <div>
                 </div>
             }
-          </a>
-          <a 
+          </a> */}
+          {/* <a 
             // href="https://hayeskg.medium.com/" 
             onClick = {()=> toggleDropdowns("grow", !dropdowns.grow)} 
             className="card"
@@ -117,8 +174,8 @@ export default function Home() {
                 <div>
                 </div>
             }
-          </a>
-          <a 
+          </a> */}
+          {/* <a 
             // href="https://www.unep.org/explore-topics/climate-change/facts-about-climate-emergency" 
             onClick = {()=> toggleDropdowns("purpose", !dropdowns.purpose)} 
             className="card"
@@ -135,7 +192,7 @@ export default function Home() {
                 <div>
                 </div>
             }
-          </a>
+          </a> */}
         </div>
       </main>
 
@@ -192,6 +249,7 @@ export default function Home() {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url(./images/car.png);
       }
 
       main {
@@ -279,7 +337,7 @@ export default function Home() {
 
       .card {
         height: 15rem;
-        // width: 40rem;
+        // width: 800rem;
         margin: 0.5rem;
         flex-basis: 45%;
         padding: 2rem;

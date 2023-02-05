@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "astro-imagetools": "^0.6.10",
     "create-next-app": "^11.0.1",
     "next": "9.5.3",
     "react": "16.13.1",
