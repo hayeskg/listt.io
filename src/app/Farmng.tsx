@@ -24,8 +24,31 @@ const exampleItems = [
   },
 ];
 
-const ExCarousel = () => {
+const Farmng = () => {
   return (
+    <Box>
+      <Typography 
+        variant="h4" 
+        color={"#004f31"} 
+        align={"center"} 
+        marginTop={2}
+        fontWeight={"regular"}
+      >
+        Mobile Enclosure
+      </Typography>
+      {/* <Box display={"flex"} flexDirection={"row"} alignItems={"center"} width={"50%"} marginLeft={"25%"}>
+        <Image src={team} alt={"team"} height={500}/>
+      </Box> */}
+      <Typography 
+        variant="subtitle1" 
+        color={"#004f31"} 
+        align={"center"} 
+        fontWeight={"regular"}
+        marginTop={2}
+      >
+        Bringing livestock back into arable farming.
+      </Typography>
+    
     <Carousel
       animation="slide"
       indicators={true}
@@ -38,13 +61,14 @@ const ExCarousel = () => {
         maxWidth: "600px",
         flexGrow: 1,
         margin: "auto",
-        mt: 5,
+        // mt: 2,
       }}
     >
       {exampleItems.map((item, i) => (
         <Item key={i} item={item} />
       ))}
     </Carousel>
+    </Box>
   );
 };
 
@@ -53,7 +77,7 @@ function Item(props: any) {
     <Paper
       sx={{
         position: "relative",
-        backgroundColor: "grey.100",
+        backgroundColor: "#fcf7f1",
         color: "#fff",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -63,8 +87,9 @@ function Item(props: any) {
         height: "auto",
         display: "flex",
         flexDirection: "column",
-        borderRadius: "10px",
+        borderRadius: "30px",
         p: 4,
+        m: 1
       }}
       elevation={4}
     >
@@ -81,4 +106,4 @@ function Item(props: any) {
   );
 }
 
-export default ExCarousel;
+export default Farmng;
