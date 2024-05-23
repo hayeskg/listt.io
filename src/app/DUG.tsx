@@ -26,7 +26,7 @@ const exampleItems = [
 
 const Farmng = () => {
   return (
-    <Box>
+    <Box marginLeft={1} marginRight={1}>
       <Typography 
         variant="h4" 
         color={"#004f31"} 
@@ -40,7 +40,7 @@ const Farmng = () => {
         <Image src={team} alt={"team"} height={500}/>
       </Box> */}
       <Typography 
-        variant="subtitle1" 
+        variant="h6" 
         color={"#004f31"} 
         align={"center"} 
         fontWeight={"regular"}
