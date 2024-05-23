@@ -16,7 +16,7 @@ export default function Header() {
                 About
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 marginTop={2}
@@ -25,7 +25,7 @@ export default function Header() {
               We're a team of engineers in: 
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 // marginTop={2}
@@ -34,7 +34,7 @@ export default function Header() {
               ⚬ robotics
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 // marginTop={2}
@@ -43,7 +43,7 @@ export default function Header() {
               ⚬ automation
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 // marginTop={2}
@@ -55,7 +55,7 @@ export default function Header() {
               <Image src={team} alt={"team"} height={500}/>
             </Box>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"bold"}
@@ -63,7 +63,7 @@ export default function Header() {
               Our systems are: 
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}
@@ -71,7 +71,7 @@ export default function Header() {
               ⚬ built for your farming business
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}
@@ -79,7 +79,7 @@ export default function Header() {
               ⚬ the right level of complex
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}
@@ -90,7 +90,7 @@ export default function Header() {
               <Image src={partnership} alt={"team"} height={500}/>
             </Box>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"bold"}
@@ -98,7 +98,7 @@ export default function Header() {
               We are passionate about: 
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}
@@ -106,7 +106,7 @@ export default function Header() {
               ⚬ collaborative innovation
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}
@@ -114,7 +114,7 @@ export default function Header() {
               ⚬ resilient food systems
             </Typography>
             <Typography 
-                variant="subtitle1" 
+                variant="h6" 
                 color={"#004f31"} 
                 align={"center"} 
                 fontWeight={"regular"}

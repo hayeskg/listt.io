@@ -2,41 +2,46 @@
 
 import React from "react";
 import Image from 'next/image'
-import { Paper, Box, Typography, Button } from "@mui/material";
+import { Paper, Box, Typography } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import sheep from "../photos/sheep.jpg"
-import enclosure from "../photos/enclosure.jpg"
-import group from "../photos/group.jpg"
+import stage1 from "../photos/stage1.png"
+import stage2 from "../photos/stage2.png"
+import stage3 from "../photos/stage3.png"
+import stage4 from "../photos/stage4.png"
 
-import Panels from "./Panels";
 
 
 const exampleItems = [
   {
-    pic: sheep,
-    description: "Happy residents",
+    pic: stage1,
+    description: "Assemble your kit.",
   },
   {
-    pic: enclosure,
-    description: "Mobile enclosure",
+    pic: stage2,
+    description: "Welcome the residents.",
   },
    {
-    pic: group,
-    description: "Lunchtime",
+    pic: stage3,
+    description: "Move regularly.",
+  },
+  {
+    pic: stage4,
+    description: "Easy-swap batteries.",
   },
 ];
 
 const Enclosure = () => {
   return (
-    <Box marginBottom={6} marginLeft={1} marginRight={1}>
+    <Box marginBottom={6} marginTop={6}>
       <Typography 
         variant="h4" 
         color={"#004f31"} 
         align={"center"} 
         marginTop={4}
-        fontWeight={"regular"}
+        fontWeight={"light"}
+        fontStyle={"oblique"}
       >
-        Mobile Enclosure
+        Instructions
       </Typography>
       {/* <Box display={"flex"} flexDirection={"row"} alignItems={"center"} width={"50%"} marginLeft={"25%"}>
         <Image src={team} alt={"team"} height={500}/>
@@ -45,10 +50,10 @@ const Enclosure = () => {
         variant="h6" 
         color={"#004f31"} 
         align={"center"} 
-        fontWeight={"regular"}
+        
         marginTop={2}
       >
-        Bringing livestock back into arable fields.
+        Simple setup and usage - just follow the steps below:
       </Typography>
     <Carousel
       animation="slide"
@@ -72,7 +77,7 @@ const Enclosure = () => {
     
     <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
       <a href="mailto:kristof@listt.io">
-    {/* <Typography 
+    <Typography 
         variant="subtitle1" 
         color={"#fcf7f1"} 
         align={"center"} 
@@ -84,10 +89,9 @@ const Enclosure = () => {
         width={"300px"}
       >
         PRE-ORDER TODAY!
-      </Typography> */}
+      </Typography>
       </a>
       </Box>
-      <Panels/>
     </Box>
   );
 };
