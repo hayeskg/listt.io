@@ -4,37 +4,37 @@ import React from "react";
 import Image from 'next/image'
 import { Paper, Box, Typography, Button } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import sheep from "../photos/sheep.jpg"
-import enclosure from "../photos/enclosure.jpg"
-import group from "../photos/group.jpg"
+import closeup from "../photos/closeup.jpg"
+import field from "../photos/field.jpg"
+import inspect from "../photos/inspect.jpg"
 
 
 const exampleItems = [
   {
-    pic: sheep,
-    description: "Happy residents",
+    pic: closeup,
+    description: "Three point hitch",
   },
   {
-    pic: enclosure,
-    description: "Mobile enclosure",
+    pic: field,
+    description: "Accuracy calibration",
   },
    {
-    pic: group,
-    description: "Lunchtime",
+    pic: inspect,
+    description: "Inspecting the goods",
   },
 ];
 
 const Farmng = () => {
   return (
-    <Box>
+    <Box marginBottom={6}>
       <Typography 
         variant="h4" 
         color={"#004f31"} 
         align={"center"} 
-        marginTop={2}
+        marginTop={6}
         fontWeight={"regular"}
       >
-        Mobile Enclosure
+        Farm-ng Amiga
       </Typography>
       {/* <Box display={"flex"} flexDirection={"row"} alignItems={"center"} width={"50%"} marginLeft={"25%"}>
         <Image src={team} alt={"team"} height={500}/>
@@ -46,9 +46,8 @@ const Farmng = () => {
         fontWeight={"regular"}
         marginTop={2}
       >
-        Bringing livestock back into arable farming.
+        Come and see the first unit in Europe. 
       </Typography>
-    
     <Carousel
       animation="slide"
       indicators={true}
@@ -68,6 +67,23 @@ const Farmng = () => {
         <Item key={i} item={item} />
       ))}
     </Carousel>
+    <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
+    <a href="mailto:kristof@listt.io">
+     <Typography 
+        variant="subtitle1" 
+        color={"#fcf7f1"} 
+        align={"center"} 
+        fontWeight={"bold"}
+        marginTop={2}
+        bgcolor={"#d69f32"}
+        padding={3}
+        borderRadius={3}
+        width={"300px"}
+      >
+        BOOK A DEMO!
+      </Typography>
+      </a>
+      </Box>
     </Box>
   );
 };
