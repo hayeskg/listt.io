@@ -26,7 +26,7 @@ const exampleItems = [
 
 const Enclosure = () => {
   return (
-    <Box>
+    <Box marginBottom={6}>
       <Typography 
         variant="h4" 
         color={"#004f31"} 
@@ -46,9 +46,8 @@ const Enclosure = () => {
         fontWeight={"regular"}
         marginTop={2}
       >
-        Bringing livestock back into arable farming.
+        Bringing livestock back into arable fields.
       </Typography>
-    
     <Carousel
       animation="slide"
       indicators={true}
@@ -68,6 +67,24 @@ const Enclosure = () => {
         <Item key={i} item={item} />
       ))}
     </Carousel>
+    
+    <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
+      <a href="mailto:kristof@listt.io">
+    <Typography 
+        variant="subtitle1" 
+        color={"#fcf7f1"} 
+        align={"center"} 
+        fontWeight={"bold"}
+        marginTop={2}
+        bgcolor={"#d69f32"}
+        padding={3}
+        borderRadius={3}
+        width={"300px"}
+      >
+        PRE-ORDER TODAY!
+      </Typography>
+      </a>
+      </Box>
     </Box>
   );
 };
